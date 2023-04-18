@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header header--background">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <img src="images/logo.svg" alt="Логотип" />
+            </a>
+          </div>
+
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">О компании</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Услуги</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Портфолио</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Цены</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Вопрос-Ответ</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Контакт</a>
+            </li>
+          </ul>
+
+          <div class="header__phone">
+            <a class="header__phone-link" href="tel:+71234567890"
+              >+7 (123) 456-78-90</a
+            >
+            <span class="header__phone-info">Пн. - Пт. с 8.00 до 17.00</span>
+          </div>
+        </div>
+        <div class="header__mobile">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <img src="images/logo.svg" alt="Логотип" />
+            </a>
+          </div>
+          <input type="checkbox" id="hi" />
+          <label class="menu" for="hi">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
+          <div class="header__mobile-box header__mobile-box--hidden">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">О компании</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">Услуги</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">Портфолио</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">Цены</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">Вопрос-Ответ</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">Контакт</a>
+              </li>
+            </ul>
+
+            <div class="header__phone">
+              <a class="header__phone-link" href="tel:+71234567890"
+                >+7 (123) 456-78-90</a
+              >
+              <span class="header__phone-info">Пн. - Пт. с 8.00 до 17.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="pagination">
+        <div class="container">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">Главная</a>
+            </li>
+            -
+            <li class="pagination__item">
+              <span class="pagination__link">Услуги</span>
+            </li>
+            -
+            <li class="pagination__item pagination__item--active">
+              <span class="pagination__link">Объемные буквы</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="container">
+          <h3 class="page-title">Наши услуги</h3>
+          <div class="info__inner">
+            <p class="info__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+              deserunt provident quo tempora labore commodi quas mollitia
+              ducimus veritatis! Pariatur nemo error voluptatum recusandae nihil
+              minus veniam laudantium? Nobis, soluta. Lorem ipsum dolor, sit
+              amet consectetur adipisicing elit. Harum deserunt provident quo
+              tempora labore commodi quas mollitia ducimus veritatis! Pariatur
+              nemo error voluptatum recusandae nihil minus veniam laudantium?
+              Nobis, soluta.
+            </p>
+            <p class="info__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+              deserunt provident quo tempora labore commodi quas mollitia
+              ducimus veritatis! Pariatur nemo error voluptatum recusandae nihil
+              minus veniam laudantium? Nobis, soluta. Lorem ipsum dolor, sit
+              amet consectetur adipisicing elit. Harum deserunt provident quo
+              tempora labore commodi quas mollitia ducimus veritatis! Pariatur
+              nemo error voluptatum recusandae nihil minus veniam laudantium?
+              Nobis, soluta.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery__wrapper">
+            <h3 class="subtitle gallery__title">Примеры <span>работ:</span></h3>
+            <div class="gallery__inner">
+              <div class="gallery__item">
+                <!-- Сюда помещать большие изображения -->
+                <a
+                  data-fancybox="gallery"
+                  data-src="https://lipsum.app/id/1/1600x1200">
+                  <img src="images/gallery/1.png" alt="Фотография работы" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a data-fancybox="gallery" data-src="images/gallery/2.png">
+                  <img src="images/gallery/2.png" alt="Фотография работы" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a data-fancybox="gallery" data-src="images/gallery/3.png">
+                  <img src="images/gallery/3.png" alt="Фотография работы" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a data-fancybox="gallery" data-src="images/gallery/4.png">
+                  <img src="images/gallery/4.png" alt="Фотография работы" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a data-fancybox="gallery" data-src="images/gallery/5.png">
+                  <img src="images/gallery/5.png" alt="Фотография работы" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a data-fancybox="gallery" data-src="images/gallery/6.png">
+                  <img src="images/gallery/6.png" alt="Фотография работы" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="container">
+          <h3 class="subtitle">
+            Мы реализуем <span>практически любые</span> рекламные конструкции
+          </h3>
+          <div class="cards__inner">
+            <div class="cards__item">
+              <h4 class="cards__item-title">ОБЪЕМНЫЕ БУКВЫ</h4>
+              <div class="cards__item-img">
+                <img src="images/cards/1.png" alt="ОБЪЕМНЫЕ БУКВЫ" />
+              </div>
+              <p class="cards__item-text">
+                Изготовление объёмных световых букв в Новосибирске из
+                качественных материалов и по низким ценам.
+              </p>
+              <a href="#" class="cards__item-btn default-btn">Подробнее</a>
+            </div>
+            <div class="cards__item">
+              <h4 class="cards__item-title">ОБЪЕМНЫЕ БУКВЫ</h4>
+              <div class="cards__item-img">
+                <img src="images/cards/2.png" alt="ОБЪЕМНЫЕ БУКВЫ" />
+              </div>
+              <p class="cards__item-text">
+                Изготовление объёмных световых букв в Новосибирске из
+                качественных материалов и по низким ценам.
+              </p>
+              <a href="#" class="cards__item-btn default-btn">Подробнее</a>
+            </div>
+            <div class="cards__item">
+              <h4 class="cards__item-title">ОБЪЕМНЫЕ БУКВЫ</h4>
+              <div class="cards__item-img">
+                <img src="images/cards/3.png" alt="ОБЪЕМНЫЕ БУКВЫ" />
+              </div>
+              <p class="cards__item-text">
+                Изготовление объёмных световых букв в Новосибирске из
+                качественных материалов и по низким ценам.
+              </p>
+              <a href="#" class="cards__item-btn default-btn">Подробнее</a>
+            </div>
+
+            <div class="cards__item hidden" data-card="hidden">
+              <h4 class="cards__item-title">ОБЪЕМНЫЕ БУКВЫ</h4>
+              <div class="cards__item-img">
+                <img src="images/cards/6.png" alt="ОБЪЕМНЫЕ БУКВЫ" />
+              </div>
+              <p class="cards__item-text">
+                Изготовление объёмных световых букв в Новосибирске из
+                качественных материалов и по низким ценам.
+              </p>
+              <a href="#" class="cards__item-btn default-btn">Подробнее</a>
+            </div>
+            <div class="cards__item hidden" data-card="hidden">
+              <h4 class="cards__item-title">ОБЪЕМНЫЕ БУКВЫ</h4>
+              <div class="cards__item-img">
+                <img src="images/cards/6.png" alt="ОБЪЕМНЫЕ БУКВЫ" />
+              </div>
+              <p class="cards__item-text">
+                Изготовление объёмных световых букв в Новосибирске из
+                качественных материалов и по низким ценам.
+              </p>
+              <a href="#" class="cards__item-btn default-btn">Подробнее</a>
+            </div>
+            <div class="cards__item hidden" data-card="hidden">
+              <h4 class="cards__item-title">ОБЪЕМНЫЕ БУКВЫ</h4>
+              <div class="cards__item-img">
+                <img src="images/cards/6.png" alt="ОБЪЕМНЫЕ БУКВЫ" />
+              </div>
+              <p class="cards__item-text">
+                Изготовление объёмных световых букв в Новосибирске из
+                качественных материалов и по низким ценам.
+              </p>
+              <a href="#" class="cards__item-btn default-btn">Подробнее</a>
+            </div>
+          </div>
+          <div class="more__btn-wrapper">
+            <a href="#" class="more__button">Посмотреть все услуги ></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="questions--horizontal">
+        <div class="container">
+          <div class="questions__remain">
+            <h4 class="questions__remain-title">Остались вопросы?</h4>
+            <p class="questions__remain-text">
+              Наш менеджер свяжется с Вами в течении 5 минут и ответит на все
+              возникшие вопросы
+            </p>
+            <div class="questions__remain-box--horizontal">
+              <label class="questions__remain-label">
+                <span>Как вас зовут?</span>
+                <input type="text" />
+              </label>
+              <label class="questions__remain-label">
+                <span>Ваш телефон для связи</span>
+                <input type="text" data-phone />
+              </label>
+              <button class="questions__remain-btn default-btn" type="submit">
+                Отправить
+              </button>
+            </div>
+            <p
+              class="questions__remain-conditions questions__remain-conditions--horizontal">
+              Нажимая на кнопку, вы принимаете условия
+              <a href="#">Передачи данных</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <div class="footer__info">
+              <img
+                class="footer__info-logo"
+                src="images/big-logo.svg"
+                alt="Логотип" />
+              <div class="footer__info-text">
+                <p>
+                  ООО "РЕКЛАМНО-ПРОИЗВОДСТВЕННАЯ <br />
+                  КОМПАНИЯ ДОКТОР" <br />
+                  ИНН: 5404023250 <br />
+                  ОГРН: 1155476122746
+                </p>
+                <p>
+                  Ведущая новосибирская <br />
+                  рекламно-производственная компания
+                </p>
+              </div>
+            </div>
+            <div class="footer__services">
+              <h5 class="footer__title">Услуги</h5>
+              <div class="footer__services-wrapper">
+                <ul class="footer__services-list">
+                  <li class="footer__services-item">
+                    <a href="#" class="footer__services-link">Вывески</a>
+                  </li>
+                  <li class="footer__services-item">
+                    <a href="#" class="footer__services-link">Объёмные буквы</a>
+                  </li>
+                  <li class="footer__services-item">
+                    <a href="#" class="footer__services-link">Лайтбоксы</a>
+                  </li>
+                  <li class="footer__services-item">
+                    <a href="#" class="footer__services-link">Баннеры</a>
+                  </li>
+                </ul>
+                <ul class="footer__services-list">
+                  <li class="footer__services-item">
+                    <a href="#" class="footer__services-link">Таблички</a>
+                  </li>
+                  <li class="footer__services-item">
+                    <a href="#" class="footer__services-link"
+                      >Информационные стенды</a
+                    >
+                  </li>
+                  <li class="footer__services-item">
+                    <a href="#" class="footer__services-link"
+                      >Рекламные конструкции</a
+                    >
+                  </li>
+                  <li class="footer__services-item">
+                    <a href="#" class="footer__services-link"
+                      >Рекламные стеллы</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer__contacts">
+              <h5 class="footer__title">Контакты</h5>
+              <ul class="footer__contacts-list">
+                <li class="footer__contacts-itemtitle">
+                  Адрес головного офиса:
+                </li>
+                <li class="footer__contacts-item">
+                  Новосибирск, ул. Петухова 39/6
+                </li>
+                <li class="footer__contacts-itemtitle">Режим работы офиса:</li>
+                <li class="footer__contacts-item">Пн. - Пт. с 8:00 до 17.00</li>
+                <li class="footer__contacts-itemtitle">Телефон приёмной:</li>
+                <li class="footer__contacts-item">
+                  <a class="footer__contacts-link" href="tel:+73833350011"
+                    >+7 (383) 335‒00‒11
+                    <img src="images/footer-whatsapp.svg" alt="" />
+                  </a>
+                </li>
+                <li class="footer__contacts-item">
+                  <span>Почтовый адрес:</span> rpk-doktor@mail.ru
+                </li>
+                <li class="footer__contacts-social">
+                  <a href="#">
+                    <img src="images/vk.svg" alt="Логотип Вконтакте" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__copy">
+            <p class="footer__copy-text">
+              Copyright © 2023, РПК Доктор. Все права защищены. При
+              использовании контента или любой его части ссылка на наш сайт
+              обязательна.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

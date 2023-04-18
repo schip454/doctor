@@ -1,0 +1,452 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .companies-slider__item,
+  .slick-slide {
+    width: 270px !important;
+    margin-right: 20px;
+  }
+  .slick-dots {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 0 auto;
+    margin-top: 10px;
+    button {
+      width: 12px;
+      height: 12px;
+      background-color: $grey;
+      border-radius: 50%;
+    }
+    .slick-active button {
+      background-color: $white;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .header__phone-link {
+    font-size: 18px;
+  }
+  .header__list {
+    gap: 20px;
+  }
+  .advantages__inner {
+    justify-content: center;
+    gap: 140px 30px;
+  }
+  .cards__inner {
+    column-gap: 40px;
+    justify-content: center;
+  }
+  .gallery__inner {
+    justify-content: center;
+  }
+  .questions__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info__inner {
+    flex-direction: column;
+  }
+  .info__text + .info__text {
+    margin-top: 20px;
+  }
+}
+/**/
+@media only screen and (max-width: 1120px) {
+  .calculation__image img {
+    max-height: 512px;
+    margin-top: 0px;
+  }
+  .stage__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .stage__item {
+    max-width: none;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .stage__item-num::after {
+    top: auto;
+    left: 50%;
+    bottom: -70px;
+    transform: translateX(-50%) rotate(90deg);
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .header__inner {
+    display: none;
+  }
+  .header__mobile {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+  }
+  .header__mobile-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 90vh;
+    background-color: rgba($black, 0.8);
+    text-align: center;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 25px 0;
+    transition: 0.3s ease;
+  }
+  .header__mobile-box--hidden {
+    transform: translateY(-250%);
+  }
+  .header__list {
+    flex-direction: column;
+  }
+  .header__list-item {
+    margin-bottom: 20px;
+    &:first-child {
+      margin-top: 50px;
+    }
+  }
+  .header__phone {
+    margin-top: 50px;
+  }
+  .header__phone-link::before {
+    bottom: 1px;
+    left: 45px;
+  }
+  .header__phone-info {
+    text-align: center;
+  }
+  .menu {
+    position: absolute;
+    top: 44px;
+    right: 32px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.3s ease;
+    height: 32px;
+    &:hover .bar {
+      box-shadow: 1px 1px 7px 1px RGBa(0, 0, 0, 0.3);
+    }
+    .bar {
+      width: 45px;
+      height: 5px;
+      background: #fff;
+      box-shadow: 1px 1px 3px RGBa(0, 0, 0, 0.4);
+      border-radius: 2px;
+      transition: 0.3s ease;
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+  }
+  #hi {
+    position: absolute;
+    left: -999px;
+    top: -999px;
+  }
+  #hi:checked + .menu {
+    transform: translate(-50%, -50%) rotatey(180deg);
+    .bar {
+      transform: rotatey(180deg) rotatex(360deg);
+      &:first-child {
+        transform: rotate(-45deg);
+        margin-top: 20px;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        margin-top: -20px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  .footer__info {
+    // order: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .footer__info-logo {
+    display: inline-block;
+  }
+  .footer__services {
+    order: 2;
+    // width: 100%;
+  }
+  .footer__contacts {
+    order: 1;
+    // width: 100%;
+  }
+  .footer__top {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .footer__contacts-link {
+    justify-content: center;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .calculation__image img {
+    display: none;
+  }
+  .calculation__content {
+    max-width: none;
+    padding: 50px;
+    text-align: center;
+  }
+  .calculation__result {
+  }
+  .calculation__input {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .calculation__btn {
+    max-width: 100%;
+  }
+  .questions__remain-box--horizontal .questions__remain-label input {
+    width: 100%;
+  }
+  .questions__remain-box--horizontal {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .questions__remain-box--horizontal .questions__remain-label {
+    margin-right: 0;
+  }
+  .questions__remain-box--horizontal .questions__remain-btn {
+    max-width: none;
+    margin-top: 20px;
+  }
+  .contacts__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align-last: left;
+  }
+  .contacts__box + .contacts__box {
+    margin-bottom: 20px;
+  }
+  .contacts__box--01 {
+    order: 2;
+  }
+}
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .top {
+    padding: 100px 0 60px;
+  }
+  .top__title {
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+  .top__text {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  .subtitle {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+  .cards,
+  .gallery,
+  .calculation,
+  .stage,
+  .companies,
+  .info,
+  .questions--horizontal,
+  .contacts,
+  .map {
+    padding-bottom: 60px;
+  }
+  .more__btn-wrapper {
+    padding-top: 80px;
+  }
+  .gallery__btn-wrapper {
+    padding-top: 40px;
+  }
+  .pagination {
+    padding-top: 100px;
+  }
+  .accordion__item-title {
+    font-size: 24px;
+  }
+  .footer__top {
+    gap: 20px;
+  }
+  .footer__title {
+    margin: 15px 0;
+  }
+}
+/**/
+
+@media only screen and (max-width: 640px) {
+  .calculation__title {
+    font-size: 24px;
+  }
+  .calculation__content {
+    padding: 50px 30px 50px;
+  }
+  .slick-dots {
+    display: none;
+  }
+  .accordion__item-title {
+    font-size: 18px;
+  }
+  .page-title {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .top__title {
+    font-size: 32px;
+  }
+  .top__text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .menu {
+    right: 0;
+  }
+  .subtitle {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+  .cards__item {
+    max-width: 300px;
+    padding: 40px 30px;
+  }
+  .cards__item-img {
+    margin-bottom: 30px;
+  }
+  .cards__item-title,
+  .companies__title {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .calculation__result {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .calculation__result-wrapper {
+    max-width: none;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .calculation__title {
+    font-size: 22px;
+  }
+  .calculation__text {
+    font-size: 16px;
+  }
+  .stage__item {
+    margin-bottom: 15px;
+  }
+  .stage__item-num::after {
+    bottom: -77px;
+  }
+  .accordion__item-title {
+    font-size: 14px;
+    padding: 20px;
+  }
+  .accordion__item-content {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .top__btn {
+    font-size: 18px;
+    min-height: 80px;
+  }
+  .stage__item-num::after {
+    bottom: -93px;
+  }
+  .accordion__item-title,
+  .accordion__item-content {
+    font-size: 12px;
+  }
+  .accordion__item-title::after {
+    right: 15px;
+  }
+  .questions__remain {
+    padding: 20px 30px 15px;
+  }
+  .questions__remain-title {
+    font-size: 22px;
+  }
+  .questions__remain-text {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .questions__remain-label span {
+    margin: 10px 0;
+  }
+  .header__mobile-box {
+    width: 260px;
+  }
+  .menu {
+    right: -10px;
+  }
+}
+/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}
+/**/
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+}
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
+/**/
